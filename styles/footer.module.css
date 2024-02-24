@@ -1,0 +1,19 @@
+.footer {
+    background-image: linear-gradient(to bottom, rgb(0 0 0 / 0.70), rgb(0 0 0 / 0.60)), url(../public/footer.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+}
+
+@media (min-width: 768px) {
+    .contenido {
+        padding: 0rem 4rem;
+    }
+}
+
+.footerTitle {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+}

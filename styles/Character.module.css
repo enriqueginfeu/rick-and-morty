@@ -1,0 +1,98 @@
+.container {
+  padding: 2rem;
+}
+
+.titulo {
+  font-size: 5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;  
+  gap: 3rem;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 1rem;
+  text-align: left;
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 10px;
+  background: #2980b9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3d556e, #2980b9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3d556e, #2980b9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  transition: color 0.30s ease, border-color 0.30s ease;
+}
+
+@media (min-width: 768px) {
+  .card {
+    gap: 5rem;
+    margin: .7rem 0rem;
+  }
+}
+
+.card:hover {
+  color: var(--primary);
+}
+
+.card h2 {
+  font-size: 2rem;
+  color: #ffa500;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0rem;
+}
+
+.pagina {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .pagina {
+    font-size: 1.8rem;
+    margin: 0 auto;
+  }
+}
+
+.btn {
+  width: 13rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    width: 20rem;
+  }
+}
+
+.btn:hover {
+  cursor: pointer;
+}

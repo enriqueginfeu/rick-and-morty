@@ -1,26 +1,80 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+:root {
+  --primary: #10B0C8;
+  --black: #262626;
+  --white: #FFF;
+  --fuente-principal: 'Outfit', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
+html {
+  font-size: 62.5%;
   box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 2rem;
+  font-family: var(--fuente-principal);
+  line-height: 1.5;
+  background: #00B4DB;
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+  background: linear-gradient(to right, #0083B0, #00B4DB);
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+[class*="contenedor"],
+main {
+  width: min(95%, 130rem);
+  margin: 3rem auto;
+}
+
+[class*="heading"] {
+  font-size: 6rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--black);
+  margin: 8rem 0;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
-    background: black;
   }
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 5rem 0rem;
+}
+
+
+li {
+  list-style: none;
+}
+
+.sombra {
+  box-shadow: 5px 4px 15px -1px rgba(252, 252, 252, 0.75);
+  -webkit-box-shadow: 5px 4px 15px -1px rgba(252, 252, 252, 0.75);
+  -moz-box-shadow: 5px 4px 15px -1px rgba(252, 252, 252, 0.75);
+}
+
+.sombra:hover {
+  cursor: pointer;
+  box-shadow: 5px 4px 25px -1px rgba(252, 252, 252, 0.75);
+  -webkit-box-shadow: 5px 4px 25px -1px rgba(252, 252, 252, 0.75);
+  -moz-box-shadow: 5px 4px 25px -1px rgba(252, 252, 252, 0.75);
 }
